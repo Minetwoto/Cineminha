@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+
+    /*Fonte do texto*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+}
+/*Container central da página*/
+.container{
+    max-width: 1100px; /*Largura máxima*/
+    margin: 30px auto; /*centraliza*/
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+.subtitulo{
+    color: white;
+    margin-bottom: 30px;
+}
+/*Área dos Cards*/
+.cards{
+    display: flex; /*Coloca lado a lado*/
+    flex-wrap: wrap; /*Quebra a linha*/
+    justify-content: center;
+    gap: 20px; /*Espaço entre cards*/
+}
+.card{
+    width: 220px;
+    background-color: rgb(129, 4, 20);
+    border-radius: 10px; /*Arredonda as bordas*/
+    padding: 15px;
+    box-shadow: 0 4px 12px rgb(231, 74, 95);
+    cursor: pointer;
+
+    /*Animação*/
+    transition: transform 0.2;
+    position: relative;
+}
+
+/*Efeito de mouse ao passar*/
+.card:hover{
+    transform: scale(1.03);
+}
+/*Checkbox dentro card*/
+.card input{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+/*Imagem*/
+.card img{
+    width: 200px ;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/*Nome do produto*/
+.card h2{
+    color: white;
+}
+/*Preço*/
+.card span{
+    font-weight: bold;
+}
+/*Botão*/
+button{
+    width: 220px;
+    height: 110px;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration-color: bisque;
+}
+/*Resultado*/
+.resultado{
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px black;
+    text-align: left;
+    color: black;
+}
+
+
+
+/* TABELA PRECOS */
+
+.tabela{
+    display: flex; /*Coloca lado a lado*/
+    flex-wrap: wrap; /*Quebra a linha*/
+    justify-content: center;
+    gap: 20px; /*Espaço entre cards*/
+}
+
+.tabela{
+    max-width: 1100px; /*Largura máxima*/
+    margin: 30px auto; /*centraliza*/
+    text-align: left;
+    
+    width: 1000px;
+    
+    background-color: rgb(26, 7, 9);
+    border-radius: 10px; /*Arredonda as bordas*/
+    padding: 15px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+.tabela h1 {
+    width: 1000px;
+    text-align: center;
+}
+
+/* Cards preço */
+.tabelinha{
+    width: 220px;
+    background-color: rgb(129, 4, 20);
+    border-radius: 10px; /*Arredonda as bordas*/
+    padding: 15px;
+    box-shadow: 0 4px 12px rgb(231, 74, 95);
+    cursor: pointer;
+
+    /*Animação*/
+    transition: transform 0.2;
+    position: relative;
+}
+
+.tabelinha:hover{
+    transform: scale(1.03);
+}
+/*Checkbox dentro card*/
+.tabelinha input{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.tabelinha span{
+    font-weight: bold;
+}

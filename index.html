@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimuladorPedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!--Container principal da página-->
+    <div class="container">
+        <!--Título principal-->
+        <h1> 🍿🎥 Simulador de Cinema do TDS261T</h1>
+        <!--Subtítulo-->
+        <p class="subtitulo">
+            ⭐Bem-vindo ao cinema do TDS!⭐
+        </p>
+        <!--Área que contém todos os produtos-->
+        <div class="cards">
+            <!--CARD = UM PRODUTO-->
+            <!-- Usamos label para que clicar no card marque checkbox-->
+            <label class="card">
+                <!--Checkbox que identifica se o item está selecionado-->
+                <input type="radio" name="filmes" id="freira">
+                <!--Imagem do produto-->
+                <img src="assets/freira.jpg" alt="freira">
+                <!--Nome do produto-->
+                <h2> A Freira</h2>
+                <p> 3,3 🌕🌕🌕🌘🌑</p>
+                <!--Preço-->
+            </label>
+
+            <label class="card">
+                <input type="radio" name="filmes" id="it">
+                <img src="assets/it.jpg" alt="It">
+                <h2> It, A Coisa</h2>
+                <p> 3,6 🌕🌕🌕🌗🌑</p>
+            </label>
+
+            <label class="card">
+                <input type="radio" name="filmes" id="mj">
+                <img src="assets/mj.jpg" alt=",j">
+                <h2> Michael</h2>
+                <p> 4,2 🌕🌕🌕🌕🌑</p>
+            </label>
+
+            <label class="card">
+                <input type="radio" name="filmes" id="countmontecristo">
+                <img src="assets/count-monte-cristo.jpg" alt="countmontecristo">
+                <h2> O Conde de Monte Cristo</h2>
+                <p> 4,0 🌕🌕🌕🌕🌑</p>
+            </label>
+
+            <label class="card">
+                <input type="radio" name="filmes" id="meninopijamalistrado">
+                <img src="assets/menino-pijama-listrado.jpg" alt="meninopijamalistrado">
+                <h2> O Menino do Pijama Listrado</h2>
+                <p> 4,6 🌕🌕🌕🌕🌗</p>
+            </label>
+
+            <label class="card">
+                <input type="radio" name="filmes" id="rango">
+                <img src="assets/rango.jpg" alt="rango">
+                <h2> Rango</h2>
+                <p> 3,6 🌕🌕🌕🌗🌑</p>
+            </label>
+
+            <label class="card">
+                <input type="radio" name="filmes" id="scarymovie">
+                <img src="assets/scary-movie.jpg" alt="scarymovie">
+                <h2> Todo Mundo em Pânico 2</h2>
+                <p> 3,6 🌕🌕🌕🌗🌑</p>
+            </label>
+        </div>
+                <!--Tabela------------------------------------------------------------------------------>
+
+         <Div class="tabela">
+                <h1>Tabela de preço dos ingressos</h1>    
+            <label class="tabelinha">
+                <input type="checkbox" id="ingressoInteiro">
+                <h2> Ingresso inteiro</h2>
+                <span> R$ 30,00</span>
+            </label>
+
+            <label class="tabelinha">
+                <input type="checkbox" id="ingressoMeio">
+                <h2> Meio ingresso</h2>
+                <span> R$ 15,00</span>
+            </label>
+
+            
+            <label class="tabelinha">
+                <input type="checkbox" id="ingressoIdoso">
+                <h2> ingresso geriatrico</h2>
+                <span> R$ 20,00</span>
+            </label>
+            </Div>
+        <!--Botão que chama a função calcular() para somar o pedido-->
+                   <button onclick="calcular()">Calcular Pedido</button>
+            <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
